@@ -1,0 +1,21 @@
+/* tudo relaacionado ao body */
+body {
+  background: black; /* cor de fundo do site*/
+}
+
+/* container pricipal do site, onde todos os componentes ficaram localizados */
+.container {
+  background-color: bisque;
+}
+
+/*proporção do carrossel */
+.carousel-item {
+  height: 30vh;
+}
+
+/* tamanho da imagem dentro do carrossel */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
