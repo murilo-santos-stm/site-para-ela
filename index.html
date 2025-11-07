@@ -1,211 +1,314 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Para a minha garota</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-        :root {
-            --background: #fdfdfd;
-            --text-primary: #1a1a1a;
-            --text-secondary: #5a5a5a;
-            --accent: #c5a37e; /* Um tom de ouro/bronze sofisticado */
-            --border: #e5e5e5;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
+      :root {
+        --background: #fdfdfd;
+        --text-primary: #1a1a1a;
+        --text-secondary: #5a5a5a;
+        --accent: #c5a37e; /* Um tom de ouro/bronze sofisticado */
+        --border: #e5e5e5;
+      }
 
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: var(--background);
-            color: var(--text-primary);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        h1, h2, h3, h4 {
-            font-family: 'Lora', serif;
-        }
-        
-        .accent-text {
-            color: var(--accent);
-        }
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: var(--background);
+        color: var(--text-primary);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-        /* Animação para elementos que aparecem ao rolar a página */
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        
-        .reveal-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Lora", serif;
+      }
+
+      .accent-text {
+        color: var(--accent);
+      }
+
+      /* Animação para elementos que aparecem ao rolar a página */
+      .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+
+      .reveal-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
-</head>
-<body class="overflow-x-hidden">
-
+  </head>
+  <body class="overflow-x-hidden">
     <main class="mx-auto max-w-4xl px-6 md:px-8">
+      <!-- Secção Herói -->
+      <header
+        class="min-h-screen flex flex-col justify-center text-center py-24 reveal-on-scroll"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+          Um pouco do nosso cotidiano, <br class="hidden md:block" />
+          juntos.
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-stone-600 max-w-2xl mx-auto">
+          Presente para a pessoa que deixa o meu dia mais feliz.
+        </p>
+        <div class="mt-12 w-0.5 h-24 bg-stone-200 mx-auto"></div>
+      </header>
 
-        <!-- Secção Herói -->
-        <header class="min-h-screen flex flex-col justify-center text-center py-24 reveal-on-scroll">
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Um pouco do nosso cotidiano, <br class="hidden md:block" /> juntos.</h1>
-            <p class="mt-6 text-lg md:text-xl text-stone-600 max-w-2xl mx-auto">Presente para a pessoa que deixa o meu dia mais feliz.</p>
-            <div class="mt-12 w-0.5 h-24 bg-stone-200 mx-auto"></div>
-        </header>
+      <!-- Secção: Nossa História em Capítulos -->
+      <section class="py-20 border-t border-[--border] reveal-on-scroll">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+          Capítulos da Nossa História
+        </h2>
 
-        <!-- Secção: Nossa História em Capítulos -->
-        <section class="py-20 border-t border-[--border] reveal-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Capítulos da Nossa História</h2>
-            
-            <!-- Item 1 (Texto Esquerda, Imagem Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                <div class="md:order-1">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">O Início de Tudo - Sest Senat</h3>
-                    <p class="text-stone-600 leading-relaxed">Quem diria, que um lugar que é chato e tedioso, me traria um presente tão espetacular como você </p>
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/292524/f5f5f4?text=Início" alt="O início da nossa história" class="w-full h-full object-cover">
-                </div>
-            </div>
+        <!-- Item 1 (Texto Esquerda, Imagem Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              O Início de Tudo - Sest Senat
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              Quem diria, que um lugar que é chato e tedioso, me traria um
+              presente tão espetacular como você
+            </p>
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/292524/f5f5f4?text=Início"
+              alt="O início da nossa história"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-            <!-- Item 2 (Imagem Esquerda, Texto Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/a8a29e/f5f5f4?text=Aventura" alt="Uma aventura memorável" class="w-full h-full object-cover">
-                </div>
-                <div class="md:order-2">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">Nosso primeiro encontrado</h3>
-                    <p class="text-stone-600 leading-relaxed">Aquela viagem ou experiência que nos marcou para sempre. Onde descobrimos mais um sobre o outro e criámos memórias que vão durar uma vida inteira.</p>
-                </div>
-            </div>
+        <!-- Item 2 (Imagem Esquerda, Texto Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/a8a29e/f5f5f4?text=Aventura"
+              alt="Uma aventura memorável"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:order-2">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              Nosso primeiro encontrado
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              Aquela viagem ou experiência que nos marcou para sempre. Onde
+              descobrimos mais um sobre o outro e criámos memórias que vão durar
+              uma vida inteira.
+            </p>
+          </div>
+        </div>
 
-            <!-- Item 3 (Texto Esquerda, Imagem Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                <div class="md:order-1">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">A Calma do Cotidiano</h3>
-                    <p class="text-stone-600 leading-relaxed">A beleza encontrada nos momentos simples. Um café pela manhã, uma série no sofá, a paz de simplesmente estar junto sem precisar de palavras.</p>
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/78716c/f5f5f4?text=Cotidiano" alt="Momentos do cotidiano" class="w-full h-full object-cover">
-                </div>
-            </div>
+        <!-- Item 3 (Texto Esquerda, Imagem Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              A Calma do Cotidiano
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              A beleza encontrada nos momentos simples. Um café pela manhã, uma
+              série no sofá, a paz de simplesmente estar junto sem precisar de
+              palavras.
+            </p>
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/78716c/f5f5f4?text=Cotidiano"
+              alt="Momentos do cotidiano"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-            <!-- Item 4 (Imagem Esquerda, Texto Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/d6d3d1/1c1917?text=Apoio" alt="Apoio incondicional" class="w-full h-full object-cover">
-                </div>
-                <div class="md:order-2">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">O Porto Seguro</h3>
-                    <p class="text-stone-600 leading-relaxed">Nos dias difíceis, fomos o apoio um do outro. A certeza de ter alguém que nos entende e nos dá força para continuar, não importa o desafio.</p>
-                </div>
-            </div>
+        <!-- Item 4 (Imagem Esquerda, Texto Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/d6d3d1/1c1917?text=Apoio"
+              alt="Apoio incondicional"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:order-2">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              O Porto Seguro
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              Nos dias difíceis, fomos o apoio um do outro. A certeza de ter
+              alguém que nos entende e nos dá força para continuar, não importa
+              o desafio.
+            </p>
+          </div>
+        </div>
 
-            <!-- Item 5 (Texto Esquerda, Imagem Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                <div class="md:order-1">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">Risadas e Piadas Internas</h3>
-                    <p class="text-stone-600 leading-relaxed">A construção da nossa linguagem única, cheia de humor e de referências que só nós entendemos. As gargalhadas que nos conectam de uma forma especial.</p>
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
-                     <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/e7e5e4/44403c?text=Risadas" alt="Momentos de alegria" class="w-full h-full object-cover">
-                </div>
-            </div>
+        <!-- Item 5 (Texto Esquerda, Imagem Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              Risadas e Piadas Internas
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              A construção da nossa linguagem única, cheia de humor e de
+              referências que só nós entendemos. As gargalhadas que nos conectam
+              de uma forma especial.
+            </p>
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/e7e5e4/44403c?text=Risadas"
+              alt="Momentos de alegria"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-            <!-- Item 6 (Imagem Esquerda, Texto Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                 <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/57534e/f5f5f4?text=Sonhos" alt="Sonhos e planos" class="w-full h-full object-cover">
-                </div>
-                <div class="md:order-2">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">Sonhando Juntos</h3>
-                    <p class="text-stone-600 leading-relaxed">As conversas sobre o futuro, os planos traçados e os sonhos partilhados. A empolgação de olhar para o horizonte e saber que o construiremos lado a lado.</p>
-                </div>
-            </div>
-            
-            <!-- Item 7 (Texto Esquerda, Imagem Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                <div class="md:order-1">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">Crescimento Mútuo</h3>
-                    <p class="text-stone-600 leading-relaxed">Como nos tornámos pessoas melhores desde que nos conhecemos. O incentivo para crescer, aprender e evoluir, sempre com o apoio e a admiração um do outro.</p>
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/bcaaa4/f5f5f4?text=Evolução" alt="Crescimento juntos" class="w-full h-full object-cover">
-                </div>
-            </div>
+        <!-- Item 6 (Imagem Esquerda, Texto Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/57534e/f5f5f4?text=Sonhos"
+              alt="Sonhos e planos"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:order-2">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              Sonhando Juntos
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              As conversas sobre o futuro, os planos traçados e os sonhos
+              partilhados. A empolgação de olhar para o horizonte e saber que o
+              construiremos lado a lado.
+            </p>
+          </div>
+        </div>
 
-            <!-- Item 8 (Imagem Esquerda, Texto Direita) -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
-                 <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
-                    <!-- TROQUE AQUI: Coloque o link da sua foto -->
-                    <img src="https://placehold.co/800x1000/44403c/e7e5e4?text=Presente" alt="O nosso presente" class="w-full h-full object-cover">
-                </div>
-                <div class="md:order-2">
-                    <h3 class="text-2xl font-semibold mb-3 accent-text">O Nosso Agora</h3>
-                    <p class="text-stone-600 leading-relaxed">Celebrando o presente. O culminar de todos estes capítulos numa parceria sólida, madura e cheia de amor. O melhor capítulo é sempre o que estamos a viver.</p>
-                </div>
-            </div>
-        </section>
+        <!-- Item 7 (Texto Esquerda, Imagem Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              Crescimento Mútuo
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              Como nos tornámos pessoas melhores desde que nos conhecemos. O
+              incentivo para crescer, aprender e evoluir, sempre com o apoio e a
+              admiração um do outro.
+            </p>
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-2">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/bcaaa4/f5f5f4?text=Evolução"
+              alt="Crescimento juntos"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-        <!-- Secção: Mensagem Final -->
-        <section class="py-20 border-t border-[--border] reveal-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Uma Nota Para Ti</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
-                <p class="text-lg text-stone-700 leading-loose">
-                    Meu amor,
-                    <br/><br/>
-                    Este é apenas um pequeno reflexo digital da admiração imensa que tenho por ti. Celebrar a tua existência é celebrar a parceria, o crescimento e a calma que encontrámos um no outro.
-                    <br/><br/>
-                    Obrigado por cada passo desta caminhada. Que continuemos a construir, a sonhar e a ser o porto de abrigo um do outro.
-                    <br/><br/>
-                    Com todo o meu amor,
-                    <br/>
-                    <span class="font-bold accent-text text-xl mt-2 inline-block">[O Teu Nome]</span>
-                </p>
-            </div>
-        </section>
+        <!-- Item 8 (Imagem Esquerda, Texto Direita) -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+          <div class="overflow-hidden rounded-lg shadow-xl md:order-1">
+            <!-- TROQUE AQUI: Coloque o link da sua foto -->
+            <img
+              src="https://placehold.co/800x1000/44403c/e7e5e4?text=Presente"
+              alt="O nosso presente"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:order-2">
+            <h3 class="text-2xl font-semibold mb-3 accent-text">
+              O Nosso Agora
+            </h3>
+            <p class="text-stone-600 leading-relaxed">
+              Celebrando o presente. O culminar de todos estes capítulos numa
+              parceria sólida, madura e cheia de amor. O melhor capítulo é
+              sempre o que estamos a viver.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <footer class="text-center py-12 mt-20 border-t border-[--border]">
-            <p class="text-stone-500 text-sm">Design & Desenvolvimento com 🤍 | &copy; 2025</p>
-        </footer>
+      <!-- Secção: Mensagem Final -->
+      <section class="py-20 border-t border-[--border] reveal-on-scroll">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Uma Nota Para Ti
+        </h2>
+        <div
+          class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl"
+        >
+          <p class="text-lg text-stone-700 leading-loose">
+            Meu amor,
+            <br /><br />
+            Este é apenas um pequeno reflexo digital da admiração imensa que
+            tenho por ti. Celebrar a tua existência é celebrar a parceria, o
+            crescimento e a calma que encontrámos um no outro.
+            <br /><br />
+            Obrigado por cada passo desta caminhada. Que continuemos a
+            construir, a sonhar e a ser o porto de abrigo um do outro.
+            <br /><br />
+            Com todo o meu amor,
+            <br />
+            <span class="font-bold accent-text text-xl mt-2 inline-block"
+              >[O Teu Nome]</span
+            >
+          </p>
+        </div>
+      </section>
 
+      <footer class="text-center py-12 mt-20 border-t border-[--border]">
+        <p class="text-stone-500 text-sm">
+          Design & Desenvolvimento com 🤍 | &copy; 2025
+        </p>
+      </footer>
     </main>
 
     <script>
-        // --- Lógica para revelar elementos ao rolar (Intersection Observer) ---
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+      // --- Lógica para revelar elementos ao rolar (Intersection Observer) ---
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
 
-        const revealElements = document.querySelectorAll('.reveal-on-scroll');
-        revealElements.forEach(el => observer.observe(el));
+      const revealElements = document.querySelectorAll(".reveal-on-scroll");
+      revealElements.forEach((el) => observer.observe(el));
     </script>
-
-</body>
+  </body>
 </html>
-
